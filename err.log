@@ -1,0 +1,727 @@
+
+[2019-07-05 09:57:45,709] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 165, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 09:57:48,031] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 165, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 09:57:48,703] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 165, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:06:26 -0500] [16633] [INFO] Handling signal: term
+[2019-07-05 10:06:27 -0500] [16668] [INFO] Worker exiting (pid: 16668)
+[2019-07-05 10:06:27 -0500] [16633] [INFO] Shutting down: Master
+[2019-07-05 10:06:31 -0500] [15409] [INFO] Starting gunicorn 19.9.0
+[2019-07-05 10:06:31 -0500] [15409] [INFO] Listening at: http://127.0.0.1:4439 (15409)
+[2019-07-05 10:06:31 -0500] [15409] [INFO] Using worker: sync
+[2019-07-05 10:06:31 -0500] [15412] [INFO] Booting worker with pid: 15412
+[2019-07-05 10:08:12,711] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:09:23 -0500] [15409] [INFO] Handling signal: term
+[2019-07-05 10:09:23 -0500] [15412] [INFO] Worker exiting (pid: 15412)
+[2019-07-05 10:09:23 -0500] [15409] [INFO] Shutting down: Master
+[2019-07-05 10:09:23 -0500] [15459] [INFO] Starting gunicorn 19.9.0
+[2019-07-05 10:09:23 -0500] [15459] [INFO] Listening at: http://127.0.0.1:4439 (15459)
+[2019-07-05 10:09:23 -0500] [15459] [INFO] Using worker: sync
+[2019-07-05 10:09:23 -0500] [15462] [INFO] Booting worker with pid: 15462
+[2019-07-05 10:13:58,479] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:14:13,906] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:14:22,162] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:14:49,988] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-05 10:14:54,416] ERROR in app: Exception on /Usuario/Registro [POST]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 166, in post
+    query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
+KeyError: 'email'
+[2019-07-08 12:58:36 -0500] [15459] [INFO] Handling signal: term
+[2019-07-08 12:58:36 -0500] [15462] [INFO] Worker exiting (pid: 15462)
+[2019-07-08 12:58:51 -0500] [15459] [INFO] Shutting down: Master
+[2019-07-08 12:58:57 -0500] [13875] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 12:58:57 -0500] [13875] [INFO] Listening at: http://127.0.0.1:4439 (13875)
+[2019-07-08 12:58:57 -0500] [13875] [INFO] Using worker: sync
+[2019-07-08 12:58:57 -0500] [14001] [INFO] Booting worker with pid: 14001
+[2019-07-08 15:46:58 -0500] [13875] [CRITICAL] WORKER TIMEOUT (pid:14001)
+[2019-07-08 15:46:58 -0500] [14001] [INFO] Worker exiting (pid: 14001)
+[2019-07-08 15:47:02 -0500] [17013] [INFO] Booting worker with pid: 17013
+[2019-07-08 15:48:03 -0500] [13875] [INFO] Handling signal: term
+[2019-07-08 15:48:03 -0500] [17013] [INFO] Worker exiting (pid: 17013)
+[2019-07-08 15:48:03 -0500] [13875] [INFO] Shutting down: Master
+[2019-07-08 15:49:24 -0500] [1749] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 15:49:24 -0500] [1749] [INFO] Listening at: http://127.0.0.1:4439 (1749)
+[2019-07-08 15:49:24 -0500] [1749] [INFO] Using worker: sync
+[2019-07-08 15:49:25 -0500] [2331] [INFO] Booting worker with pid: 2331
+[2019-07-08 15:58:12 -0500] [1749] [INFO] Handling signal: term
+[2019-07-08 15:58:12 -0500] [2331] [INFO] Worker exiting (pid: 2331)
+[2019-07-08 15:58:12 -0500] [1749] [INFO] Shutting down: Master
+[2019-07-08 15:58:22 -0500] [3148] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 15:58:22 -0500] [3148] [INFO] Listening at: http://127.0.0.1:4439 (3148)
+[2019-07-08 15:58:22 -0500] [3148] [INFO] Using worker: sync
+[2019-07-08 15:58:22 -0500] [3219] [INFO] Booting worker with pid: 3219
+[2019-07-10 17:50:55 -0500] [3148] [INFO] Handling signal: term
+[2019-07-10 17:50:55 -0500] [3219] [INFO] Worker exiting (pid: 3219)
+[2019-07-10 17:50:55 -0500] [3148] [INFO] Shutting down: Master
+[2019-07-10 17:51:02 -0500] [26096] [INFO] Starting gunicorn 19.9.0
+[2019-07-10 17:51:02 -0500] [26096] [INFO] Listening at: http://127.0.0.1:4439 (26096)
+[2019-07-10 17:51:02 -0500] [26096] [INFO] Using worker: sync
+[2019-07-10 17:51:02 -0500] [26207] [INFO] Booting worker with pid: 26207
+[2019-07-11 10:06:55 -0500] [2011] [INFO] Starting gunicorn 19.9.0
+[2019-07-11 10:06:55 -0500] [2011] [INFO] Listening at: http://127.0.0.1:4439 (2011)
+[2019-07-11 10:06:55 -0500] [2011] [INFO] Using worker: sync
+[2019-07-11 10:06:55 -0500] [2802] [INFO] Booting worker with pid: 2802
+[2019-07-11 10:07:25 -0500] [2011] [CRITICAL] WORKER TIMEOUT (pid:2802)
+[2019-07-11 10:07:26 -0500] [3591] [INFO] Booting worker with pid: 3591
+[2019-07-11 10:08:42 -0500] [2011] [INFO] Handling signal: term
+[2019-07-11 10:08:42 -0500] [3591] [INFO] Worker exiting (pid: 3591)
+[2019-07-11 10:08:42 -0500] [2011] [INFO] Shutting down: Master
+[2019-07-11 10:08:55 -0500] [3847] [INFO] Starting gunicorn 19.9.0
+[2019-07-11 10:08:55 -0500] [3847] [INFO] Listening at: http://127.0.0.1:4439 (3847)
+[2019-07-11 10:08:55 -0500] [3847] [INFO] Using worker: sync
+[2019-07-11 10:08:55 -0500] [3880] [INFO] Booting worker with pid: 3880
+[2019-07-12 10:49:28 -0500] [3847] [CRITICAL] WORKER TIMEOUT (pid:3880)
+[2019-07-12 10:49:28 -0500] [3880] [INFO] Worker exiting (pid: 3880)
+[2019-07-12 10:49:29 -0500] [16128] [INFO] Booting worker with pid: 16128
+[2019-07-12 14:54:43 -0500] [2131] [INFO] Starting gunicorn 19.9.0
+[2019-07-12 14:54:43 -0500] [2131] [INFO] Listening at: http://127.0.0.1:4439 (2131)
+[2019-07-12 14:54:43 -0500] [2131] [INFO] Using worker: sync
+[2019-07-12 14:54:44 -0500] [2375] [INFO] Booting worker with pid: 2375
+[2019-07-12 14:55:14 -0500] [2131] [CRITICAL] WORKER TIMEOUT (pid:2375)
+[2019-07-12 14:55:17 -0500] [2919] [INFO] Booting worker with pid: 2919
+[2019-07-12 14:55:47 -0500] [2131] [CRITICAL] WORKER TIMEOUT (pid:2919)
+[2019-07-12 14:55:48 -0500] [2919] [ERROR] Exception in worker process
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/kiero/production/services/registro_kiero/broco.py", line 3, in <module>
+    from routes.router import app
+  File "/home/kiero/production/services/registro_kiero/routes/router.py", line 20, in <module>
+    from routes.add_route.rregistro import registro
+  File "/home/kiero/production/services/registro_kiero/routes/add_route/rregistro.py", line 105, in <module>
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=204.141.52.148;DATABASE=DBKiero_Productos;UID=MachineBaseConnect3651;PWD=H1#KotS(xh5nF+tGv')
+SystemError: <built-in function connect> returned a result with an error set
+[2019-07-12 14:55:48 -0500] [2919] [INFO] Worker exiting (pid: 2919)
+[2019-07-12 14:55:48 -0500] [3083] [INFO] Booting worker with pid: 3083
+[2019-07-13 12:04:02 -0500] [2131] [INFO] Handling signal: term
+[2019-07-13 12:04:02 -0500] [3083] [INFO] Worker exiting (pid: 3083)
+[2019-07-13 12:04:03 -0500] [2131] [INFO] Shutting down: Master
+[2019-07-13 12:04:15 -0500] [8721] [INFO] Starting gunicorn 19.9.0
+[2019-07-13 12:04:15 -0500] [8721] [INFO] Listening at: http://127.0.0.1:4439 (8721)
+[2019-07-13 12:04:15 -0500] [8721] [INFO] Using worker: sync
+[2019-07-13 12:04:15 -0500] [8756] [INFO] Booting worker with pid: 8756
+[2019-07-13 13:17:24 -0500] [8721] [INFO] Handling signal: term
+[2019-07-13 13:17:24 -0500] [8756] [INFO] Worker exiting (pid: 8756)
+[2019-07-13 13:17:24 -0500] [8721] [INFO] Shutting down: Master
+[2019-07-13 13:17:27 -0500] [9581] [INFO] Starting gunicorn 19.9.0
+[2019-07-13 13:17:27 -0500] [9581] [INFO] Listening at: http://127.0.0.1:4439 (9581)
+[2019-07-13 13:17:27 -0500] [9581] [INFO] Using worker: sync
+[2019-07-13 13:17:27 -0500] [9634] [INFO] Booting worker with pid: 9634
+[2019-07-15 16:06:23 -0500] [9581] [CRITICAL] WORKER TIMEOUT (pid:9634)
+[2019-07-15 16:06:35 -0500] [9634] [INFO] Worker exiting (pid: 9634)
+[2019-07-15 16:06:41 -0500] [23153] [INFO] Booting worker with pid: 23153
+[2019-07-16 09:01:38 -0500] [9581] [CRITICAL] WORKER TIMEOUT (pid:23153)
+[2019-07-16 09:04:12 -0500] [23153] [INFO] Worker exiting (pid: 23153)
+[2019-07-16 09:04:35 -0500] [29618] [INFO] Booting worker with pid: 29618
+[2019-07-16 15:38:31 -0500] [2061] [INFO] Starting gunicorn 19.9.0
+[2019-07-16 15:38:31 -0500] [2061] [INFO] Listening at: http://127.0.0.1:4439 (2061)
+[2019-07-16 15:38:31 -0500] [2061] [INFO] Using worker: sync
+[2019-07-16 15:38:32 -0500] [2418] [INFO] Booting worker with pid: 2418
+[2019-07-16 15:42:34 -0500] [2061] [INFO] Handling signal: term
+[2019-07-16 15:42:34 -0500] [2418] [INFO] Worker exiting (pid: 2418)
+[2019-07-16 15:42:35 -0500] [2061] [INFO] Shutting down: Master
+[2019-07-16 15:42:46 -0500] [3306] [INFO] Starting gunicorn 19.9.0
+[2019-07-16 15:42:46 -0500] [3306] [INFO] Listening at: http://127.0.0.1:4439 (3306)
+[2019-07-16 15:42:46 -0500] [3306] [INFO] Using worker: sync
+[2019-07-16 15:42:46 -0500] [3360] [INFO] Booting worker with pid: 3360
+[2019-07-17 08:30:46 -0500] [3306] [CRITICAL] WORKER TIMEOUT (pid:3360)
+[2019-07-17 08:30:51 -0500] [10557] [INFO] Booting worker with pid: 10557
+[2019-07-17 08:31:21 -0500] [3306] [CRITICAL] WORKER TIMEOUT (pid:10557)
+[2019-07-17 08:31:21 -0500] [10557] [INFO] Worker exiting (pid: 10557)
+[2019-07-17 08:31:21 -0500] [10567] [INFO] Booting worker with pid: 10567
+[2019-07-17 13:31:42 -0500] [2032] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 13:31:42 -0500] [2032] [INFO] Listening at: http://127.0.0.1:4439 (2032)
+[2019-07-17 13:31:42 -0500] [2032] [INFO] Using worker: sync
+[2019-07-17 13:31:42 -0500] [2413] [INFO] Booting worker with pid: 2413
+[2019-07-17 17:22:13 -0500] [2027] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:22:13 -0500] [2027] [INFO] Listening at: http://127.0.0.1:4439 (2027)
+[2019-07-17 17:22:13 -0500] [2027] [INFO] Using worker: sync
+[2019-07-17 17:22:15 -0500] [2318] [INFO] Booting worker with pid: 2318
+[2019-07-17 17:22:39 -0500] [2027] [INFO] Handling signal: term
+[2019-07-17 17:22:39 -0500] [2318] [INFO] Worker exiting (pid: 2318)
+[2019-07-17 17:22:39 -0500] [2027] [INFO] Shutting down: Master
+[2019-07-17 17:22:42 -0500] [3144] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:22:42 -0500] [3144] [INFO] Listening at: http://127.0.0.1:4439 (3144)
+[2019-07-17 17:22:42 -0500] [3144] [INFO] Using worker: sync
+[2019-07-17 17:22:42 -0500] [3212] [INFO] Booting worker with pid: 3212
+[2019-07-17 17:32:07 -0500] [2051] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:32:07 -0500] [2051] [INFO] Listening at: http://127.0.0.1:4439 (2051)
+[2019-07-17 17:32:07 -0500] [2051] [INFO] Using worker: sync
+[2019-07-17 17:32:07 -0500] [2425] [INFO] Booting worker with pid: 2425
+[2019-07-18 13:49:37 -0500] [2051] [INFO] Handling signal: term
+[2019-07-18 13:49:37 -0500] [2425] [INFO] Worker exiting (pid: 2425)
+[2019-07-18 13:49:37 -0500] [2051] [INFO] Shutting down: Master
+[2019-07-18 13:49:40 -0500] [20236] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 13:49:40 -0500] [20236] [INFO] Listening at: http://127.0.0.1:4439 (20236)
+[2019-07-18 13:49:40 -0500] [20236] [INFO] Using worker: sync
+[2019-07-18 13:49:40 -0500] [20282] [INFO] Booting worker with pid: 20282
+[2019-07-18 13:49:55 -0500] [20236] [INFO] Handling signal: term
+[2019-07-18 13:49:55 -0500] [20282] [INFO] Worker exiting (pid: 20282)
+[2019-07-18 13:49:55 -0500] [20236] [INFO] Shutting down: Master
+[2019-07-18 13:49:58 -0500] [20702] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 13:49:58 -0500] [20702] [INFO] Listening at: http://127.0.0.1:4439 (20702)
+[2019-07-18 13:49:58 -0500] [20702] [INFO] Using worker: sync
+[2019-07-18 13:49:58 -0500] [20758] [INFO] Booting worker with pid: 20758
+[2019-07-18 20:16:58 -0500] [20702] [INFO] Handling signal: term
+[2019-07-18 20:16:58 -0500] [20758] [INFO] Worker exiting (pid: 20758)
+[2019-07-18 20:16:59 -0500] [20702] [INFO] Shutting down: Master
+[2019-07-18 20:17:01 -0500] [31262] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:17:01 -0500] [31262] [INFO] Listening at: http://127.0.0.1:4439 (31262)
+[2019-07-18 20:17:01 -0500] [31262] [INFO] Using worker: sync
+[2019-07-18 20:17:01 -0500] [31313] [INFO] Booting worker with pid: 31313
+[2019-07-18 20:19:28 -0500] [31262] [INFO] Handling signal: term
+[2019-07-18 20:19:28 -0500] [31313] [INFO] Worker exiting (pid: 31313)
+[2019-07-18 20:19:29 -0500] [31262] [INFO] Shutting down: Master
+[2019-07-18 20:19:31 -0500] [31473] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:19:31 -0500] [31473] [INFO] Listening at: http://127.0.0.1:4439 (31473)
+[2019-07-18 20:19:31 -0500] [31473] [INFO] Using worker: sync
+[2019-07-18 20:19:31 -0500] [31511] [INFO] Booting worker with pid: 31511
+[2019-07-18 20:56:45 -0500] [31473] [INFO] Handling signal: term
+[2019-07-18 20:56:45 -0500] [31511] [INFO] Worker exiting (pid: 31511)
+[2019-07-18 20:56:46 -0500] [31473] [INFO] Shutting down: Master
+[2019-07-18 20:56:48 -0500] [31798] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:56:48 -0500] [31798] [INFO] Listening at: http://127.0.0.1:4439 (31798)
+[2019-07-18 20:56:48 -0500] [31798] [INFO] Using worker: sync
+[2019-07-18 20:56:48 -0500] [31855] [INFO] Booting worker with pid: 31855
+[2019-07-18 21:02:01 -0500] [31798] [INFO] Handling signal: term
+[2019-07-18 21:02:01 -0500] [31855] [INFO] Worker exiting (pid: 31855)
+[2019-07-18 21:02:02 -0500] [31798] [INFO] Shutting down: Master
+[2019-07-18 21:02:04 -0500] [32037] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:02:04 -0500] [32037] [INFO] Listening at: http://127.0.0.1:4439 (32037)
+[2019-07-18 21:02:04 -0500] [32037] [INFO] Using worker: sync
+[2019-07-18 21:02:04 -0500] [32079] [INFO] Booting worker with pid: 32079
+[2019-07-18 21:36:36 -0500] [32037] [INFO] Handling signal: term
+[2019-07-18 21:36:36 -0500] [32079] [INFO] Worker exiting (pid: 32079)
+[2019-07-18 21:36:37 -0500] [32037] [INFO] Shutting down: Master
+[2019-07-18 21:36:38 -0500] [32292] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:36:38 -0500] [32292] [INFO] Listening at: http://127.0.0.1:4439 (32292)
+[2019-07-18 21:36:38 -0500] [32292] [INFO] Using worker: sync
+[2019-07-18 21:36:38 -0500] [32332] [INFO] Booting worker with pid: 32332
+[2019-07-18 21:41:47 -0500] [32292] [INFO] Handling signal: term
+[2019-07-18 21:41:47 -0500] [32332] [INFO] Worker exiting (pid: 32332)
+[2019-07-18 21:41:47 -0500] [32292] [INFO] Shutting down: Master
+[2019-07-18 21:41:50 -0500] [32500] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:41:50 -0500] [32500] [INFO] Listening at: http://127.0.0.1:4439 (32500)
+[2019-07-18 21:41:50 -0500] [32500] [INFO] Using worker: sync
+[2019-07-18 21:41:50 -0500] [32543] [INFO] Booting worker with pid: 32543
+[2019-07-18 21:47:01 -0500] [32500] [INFO] Handling signal: term
+[2019-07-18 21:47:01 -0500] [32543] [INFO] Worker exiting (pid: 32543)
+[2019-07-18 21:47:02 -0500] [32500] [INFO] Shutting down: Master
+[2019-07-18 21:47:04 -0500] [32761] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:47:04 -0500] [32761] [INFO] Listening at: http://127.0.0.1:4439 (32761)
+[2019-07-18 21:47:04 -0500] [32761] [INFO] Using worker: sync
+[2019-07-18 21:47:04 -0500] [335] [INFO] Booting worker with pid: 335
+[2019-07-18 22:12:36 -0500] [32761] [INFO] Handling signal: term
+[2019-07-18 22:12:36 -0500] [335] [INFO] Worker exiting (pid: 335)
+[2019-07-18 22:12:36 -0500] [32761] [INFO] Shutting down: Master
+[2019-07-18 22:12:39 -0500] [1094] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 22:12:39 -0500] [1094] [INFO] Listening at: http://127.0.0.1:4439 (1094)
+[2019-07-18 22:12:39 -0500] [1094] [INFO] Using worker: sync
+[2019-07-18 22:12:39 -0500] [1133] [INFO] Booting worker with pid: 1133
+[2019-07-18 22:13:43 -0500] [1094] [INFO] Handling signal: term
+[2019-07-18 22:13:43 -0500] [1133] [INFO] Worker exiting (pid: 1133)
+[2019-07-18 22:13:43 -0500] [1094] [INFO] Shutting down: Master
+[2019-07-18 22:13:46 -0500] [1324] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 22:13:46 -0500] [1324] [INFO] Listening at: http://127.0.0.1:4439 (1324)
+[2019-07-18 22:13:46 -0500] [1324] [INFO] Using worker: sync
+[2019-07-18 22:13:46 -0500] [1364] [INFO] Booting worker with pid: 1364
+[2019-07-19 05:45:37 -0500] [1324] [CRITICAL] WORKER TIMEOUT (pid:1364)
+[2019-07-19 05:45:58 -0500] [3094] [INFO] Booting worker with pid: 3094
+[2019-07-19 07:35:50 -0500] [1324] [INFO] Handling signal: term
+[2019-07-19 07:35:50 -0500] [3094] [INFO] Worker exiting (pid: 3094)
+[2019-07-19 07:35:51 -0500] [1324] [INFO] Shutting down: Master
+[2019-07-19 07:35:53 -0500] [4241] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 07:35:53 -0500] [4241] [INFO] Listening at: http://127.0.0.1:4439 (4241)
+[2019-07-19 07:35:53 -0500] [4241] [INFO] Using worker: sync
+[2019-07-19 07:35:53 -0500] [4278] [INFO] Booting worker with pid: 4278
+[2019-07-19 07:36:53 -0500] [4241] [INFO] Handling signal: term
+[2019-07-19 07:36:53 -0500] [4278] [INFO] Worker exiting (pid: 4278)
+[2019-07-19 07:36:54 -0500] [4241] [INFO] Shutting down: Master
+[2019-07-19 07:36:55 -0500] [4499] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 07:36:55 -0500] [4499] [INFO] Listening at: http://127.0.0.1:4439 (4499)
+[2019-07-19 07:36:55 -0500] [4499] [INFO] Using worker: sync
+[2019-07-19 07:36:55 -0500] [4536] [INFO] Booting worker with pid: 4536
+[2019-07-19 08:05:30 -0500] [4499] [INFO] Handling signal: term
+[2019-07-19 08:05:30 -0500] [4536] [INFO] Worker exiting (pid: 4536)
+[2019-07-19 08:05:31 -0500] [4499] [INFO] Shutting down: Master
+[2019-07-19 08:05:34 -0500] [5354] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 08:05:34 -0500] [5354] [INFO] Listening at: http://127.0.0.1:4439 (5354)
+[2019-07-19 08:05:34 -0500] [5354] [INFO] Using worker: sync
+[2019-07-19 08:05:40 -0500] [5452] [INFO] Booting worker with pid: 5452
+[2019-07-19 14:07:00 -0500] [5354] [INFO] Handling signal: term
+[2019-07-19 14:07:00 -0500] [5452] [INFO] Worker exiting (pid: 5452)
+[2019-07-19 14:07:00 -0500] [5354] [INFO] Shutting down: Master
+[2019-07-19 14:07:02 -0500] [11447] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:07:02 -0500] [11447] [INFO] Listening at: http://127.0.0.1:4439 (11447)
+[2019-07-19 14:07:02 -0500] [11447] [INFO] Using worker: sync
+[2019-07-19 14:07:02 -0500] [11494] [INFO] Booting worker with pid: 11494
+[2019-07-19 14:19:19 -0500] [11447] [INFO] Handling signal: term
+[2019-07-19 14:19:19 -0500] [11494] [INFO] Worker exiting (pid: 11494)
+[2019-07-19 14:19:19 -0500] [11447] [INFO] Shutting down: Master
+[2019-07-19 14:19:24 -0500] [11866] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:19:24 -0500] [11866] [INFO] Listening at: http://127.0.0.1:4439 (11866)
+[2019-07-19 14:19:24 -0500] [11866] [INFO] Using worker: sync
+[2019-07-19 14:19:24 -0500] [11921] [INFO] Booting worker with pid: 11921
+[2019-07-19 14:45:21 -0500] [11866] [INFO] Handling signal: term
+[2019-07-19 14:45:21 -0500] [11921] [INFO] Worker exiting (pid: 11921)
+[2019-07-19 14:45:21 -0500] [11866] [INFO] Shutting down: Master
+[2019-07-19 14:45:24 -0500] [12558] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:45:24 -0500] [12558] [INFO] Listening at: http://127.0.0.1:4439 (12558)
+[2019-07-19 14:45:24 -0500] [12558] [INFO] Using worker: sync
+[2019-07-19 14:45:24 -0500] [12601] [INFO] Booting worker with pid: 12601
+[2019-07-19 15:17:20 -0500] [12558] [INFO] Handling signal: term
+[2019-07-19 15:17:20 -0500] [12601] [INFO] Worker exiting (pid: 12601)
+[2019-07-19 15:17:21 -0500] [12558] [INFO] Shutting down: Master
+[2019-07-19 15:17:23 -0500] [14257] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 15:17:23 -0500] [14257] [INFO] Listening at: http://127.0.0.1:4439 (14257)
+[2019-07-19 15:17:23 -0500] [14257] [INFO] Using worker: sync
+[2019-07-19 15:17:23 -0500] [14292] [INFO] Booting worker with pid: 14292
+[2019-07-19 15:49:07 -0500] [14257] [INFO] Handling signal: term
+[2019-07-19 15:49:07 -0500] [14292] [INFO] Worker exiting (pid: 14292)
+[2019-07-19 15:49:08 -0500] [14257] [INFO] Shutting down: Master
+[2019-07-19 15:49:10 -0500] [15768] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 15:49:10 -0500] [15768] [INFO] Listening at: http://127.0.0.1:4439 (15768)
+[2019-07-19 15:49:10 -0500] [15768] [INFO] Using worker: sync
+[2019-07-19 15:49:10 -0500] [15813] [INFO] Booting worker with pid: 15813
+[2019-07-20 00:45:40 -0500] [15768] [CRITICAL] WORKER TIMEOUT (pid:15813)
+[2019-07-20 00:45:53 -0500] [24091] [INFO] Booting worker with pid: 24091
+[2019-07-20 00:50:41 -0500] [15768] [CRITICAL] WORKER TIMEOUT (pid:24091)
+[2019-07-20 00:50:50 -0500] [24174] [INFO] Booting worker with pid: 24174
+[2019-07-20 11:26:57 -0500] [2024] [INFO] Starting gunicorn 19.9.0
+[2019-07-20 11:26:57 -0500] [2024] [INFO] Listening at: http://127.0.0.1:4439 (2024)
+[2019-07-20 11:26:57 -0500] [2024] [INFO] Using worker: sync
+[2019-07-20 11:26:58 -0500] [2932] [INFO] Booting worker with pid: 2932
+[2019-07-20 11:27:28 -0500] [2024] [CRITICAL] WORKER TIMEOUT (pid:2932)
+[2019-07-20 11:27:28 -0500] [2932] [INFO] Worker exiting (pid: 2932)
+[2019-07-20 11:27:29 -0500] [3495] [INFO] Booting worker with pid: 3495
+[2019-07-20 11:30:51 -0500] [2024] [INFO] Handling signal: term
+[2019-07-20 11:30:51 -0500] [3495] [INFO] Worker exiting (pid: 3495)
+[2019-07-20 11:30:52 -0500] [2024] [INFO] Shutting down: Master
+[2019-07-20 11:30:54 -0500] [4539] [INFO] Starting gunicorn 19.9.0
+[2019-07-20 11:30:54 -0500] [4539] [INFO] Listening at: http://127.0.0.1:4439 (4539)
+[2019-07-20 11:30:54 -0500] [4539] [INFO] Using worker: sync
+[2019-07-20 11:30:54 -0500] [4582] [INFO] Booting worker with pid: 4582
+[2019-07-22 00:23:41 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:4582)
+[2019-07-22 00:23:46 -0500] [10295] [INFO] Booting worker with pid: 10295
+[2019-07-22 00:24:48 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10295)
+[2019-07-22 00:25:00 -0500] [10353] [INFO] Booting worker with pid: 10353
+[2019-07-22 00:26:48 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10353)
+[2019-07-22 00:27:26 -0500] [10394] [INFO] Booting worker with pid: 10394
+[2019-07-22 00:30:37 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10394)
+[2019-07-22 00:30:58 -0500] [10470] [INFO] Booting worker with pid: 10470
+[2019-07-22 00:40:40 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10470)
+[2019-07-22 00:40:48 -0500] [10544] [INFO] Booting worker with pid: 10544
+[2019-07-22 00:56:00 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10544)
+[2019-07-22 00:56:00 -0500] [10544] [INFO] Worker exiting (pid: 10544)
+[2019-07-22 00:56:01 -0500] [10632] [INFO] Booting worker with pid: 10632
+[2019-07-22 00:56:02 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10632)
+[2019-07-22 00:56:03 -0500] [10683] [INFO] Booting worker with pid: 10683
+[2019-07-22 00:57:49 -0500] [4539] [CRITICAL] WORKER TIMEOUT (pid:10683)
+[2019-07-22 00:58:04 -0500] [10718] [INFO] Booting worker with pid: 10718
+[2019-07-22 07:45:03 -0500] [2011] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 07:45:03 -0500] [2011] [INFO] Listening at: http://127.0.0.1:4439 (2011)
+[2019-07-22 07:45:03 -0500] [2011] [INFO] Using worker: sync
+[2019-07-22 07:45:06 -0500] [2284] [INFO] Booting worker with pid: 2284
+[2019-07-22 07:45:36 -0500] [2011] [CRITICAL] WORKER TIMEOUT (pid:2284)
+[2019-07-22 07:45:43 -0500] [2309] [INFO] Booting worker with pid: 2309
+[2019-07-22 07:46:13 -0500] [2011] [CRITICAL] WORKER TIMEOUT (pid:2309)
+[2019-07-22 07:46:14 -0500] [2309] [INFO] Worker exiting (pid: 2309)
+[2019-07-22 07:46:14 -0500] [3047] [INFO] Booting worker with pid: 3047
+[2019-07-22 10:06:09 -0500] [2011] [INFO] Handling signal: term
+[2019-07-22 10:06:09 -0500] [3047] [INFO] Worker exiting (pid: 3047)
+[2019-07-22 10:06:10 -0500] [2011] [INFO] Shutting down: Master
+[2019-07-22 10:07:26 -0500] [9312] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 10:07:26 -0500] [9312] [INFO] Listening at: http://127.0.0.1:4439 (9312)
+[2019-07-22 10:07:26 -0500] [9312] [INFO] Using worker: sync
+[2019-07-22 10:07:27 -0500] [9437] [INFO] Booting worker with pid: 9437
+[2019-07-22 14:05:37 -0500] [9312] [CRITICAL] WORKER TIMEOUT (pid:9437)
+[2019-07-22 14:05:37 -0500] [9437] [INFO] Worker exiting (pid: 9437)
+[2019-07-22 14:05:49 -0500] [23082] [INFO] Booting worker with pid: 23082
+[2019-07-22 14:06:19 -0500] [9312] [CRITICAL] WORKER TIMEOUT (pid:23082)
+[2019-07-22 14:06:20 -0500] [23082] [INFO] Worker exiting (pid: 23082)
+[2019-07-22 14:06:21 -0500] [23096] [INFO] Booting worker with pid: 23096
+[2019-07-22 17:12:34 -0500] [9312] [INFO] Handling signal: term
+[2019-07-22 17:12:34 -0500] [23096] [INFO] Worker exiting (pid: 23096)
+[2019-07-22 17:12:35 -0500] [9312] [INFO] Shutting down: Master
+[2019-07-22 17:12:36 -0500] [28836] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 17:12:36 -0500] [28836] [INFO] Listening at: http://127.0.0.1:4439 (28836)
+[2019-07-22 17:12:36 -0500] [28836] [INFO] Using worker: sync
+[2019-07-22 17:12:36 -0500] [28872] [INFO] Booting worker with pid: 28872
+[2019-07-23 00:05:52 -0500] [28836] [CRITICAL] WORKER TIMEOUT (pid:28872)
+[2019-07-23 00:06:03 -0500] [32733] [INFO] Booting worker with pid: 32733
+[2019-07-23 07:54:32 -0500] [2147] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 07:54:32 -0500] [2147] [INFO] Listening at: http://127.0.0.1:4439 (2147)
+[2019-07-23 07:54:32 -0500] [2147] [INFO] Using worker: sync
+[2019-07-23 07:54:32 -0500] [2537] [INFO] Booting worker with pid: 2537
+[2019-07-23 07:55:02 -0500] [2147] [CRITICAL] WORKER TIMEOUT (pid:2537)
+[2019-07-23 07:55:05 -0500] [3116] [INFO] Booting worker with pid: 3116
+[2019-07-23 07:55:35 -0500] [2147] [CRITICAL] WORKER TIMEOUT (pid:3116)
+[2019-07-23 07:55:36 -0500] [3157] [INFO] Booting worker with pid: 3157
+[2019-07-23 07:56:06 -0500] [2147] [CRITICAL] WORKER TIMEOUT (pid:3157)
+[2019-07-23 07:56:07 -0500] [3764] [INFO] Booting worker with pid: 3764
+[2019-07-23 10:20:24 -0500] [2147] [INFO] Handling signal: term
+[2019-07-23 10:20:24 -0500] [3764] [INFO] Worker exiting (pid: 3764)
+[2019-07-23 10:20:26 -0500] [2147] [INFO] Shutting down: Master
+[2019-07-23 10:20:43 -0500] [9724] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 10:20:43 -0500] [9724] [INFO] Listening at: http://127.0.0.1:4439 (9724)
+[2019-07-23 10:20:43 -0500] [9724] [INFO] Using worker: sync
+[2019-07-23 10:20:43 -0500] [9763] [INFO] Booting worker with pid: 9763
+[2019-07-23 14:34:03 -0500] [9724] [INFO] Handling signal: term
+[2019-07-23 14:34:03 -0500] [9763] [INFO] Worker exiting (pid: 9763)
+[2019-07-23 14:34:03 -0500] [9724] [INFO] Shutting down: Master
+[2019-07-23 14:34:05 -0500] [15858] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 14:34:05 -0500] [15858] [INFO] Listening at: http://127.0.0.1:4439 (15858)
+[2019-07-23 14:34:05 -0500] [15858] [INFO] Using worker: sync
+[2019-07-23 14:34:05 -0500] [15915] [INFO] Booting worker with pid: 15915
+[2019-07-24 00:05:43 -0500] [15858] [CRITICAL] WORKER TIMEOUT (pid:15915)
+[2019-07-24 00:05:46 -0500] [27588] [INFO] Booting worker with pid: 27588
+[2019-07-24 00:15:41 -0500] [15858] [CRITICAL] WORKER TIMEOUT (pid:27588)
+[2019-07-24 00:15:55 -0500] [27710] [INFO] Booting worker with pid: 27710
+[2019-07-24 07:03:50 -0500] [2265] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 07:03:50 -0500] [2265] [INFO] Listening at: http://127.0.0.1:4439 (2265)
+[2019-07-24 07:03:50 -0500] [2265] [INFO] Using worker: sync
+[2019-07-24 07:03:51 -0500] [2615] [INFO] Booting worker with pid: 2615
+[2019-07-24 07:04:21 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:2615)
+[2019-07-24 07:04:21 -0500] [2615] [INFO] Worker exiting (pid: 2615)
+[2019-07-24 07:04:22 -0500] [3244] [INFO] Booting worker with pid: 3244
+[2019-07-24 07:04:52 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3244)
+[2019-07-24 07:04:52 -0500] [3244] [INFO] Worker exiting (pid: 3244)
+[2019-07-24 07:04:53 -0500] [3431] [INFO] Booting worker with pid: 3431
+[2019-07-24 07:05:23 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3431)
+[2019-07-24 07:05:52 -0500] [3530] [INFO] Booting worker with pid: 3530
+[2019-07-24 07:06:22 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3530)
+[2019-07-24 07:06:37 -0500] [3749] [INFO] Booting worker with pid: 3749
+[2019-07-24 07:07:07 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3749)
+[2019-07-24 07:07:07 -0500] [3749] [INFO] Worker exiting (pid: 3749)
+[2019-07-24 07:07:08 -0500] [3856] [INFO] Booting worker with pid: 3856
+[2019-07-24 07:07:38 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3856)
+[2019-07-24 07:07:39 -0500] [3943] [INFO] Booting worker with pid: 3943
+[2019-07-24 07:08:09 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:3943)
+[2019-07-24 07:08:21 -0500] [4017] [INFO] Booting worker with pid: 4017
+[2019-07-24 07:08:51 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4017)
+[2019-07-24 07:08:52 -0500] [4172] [INFO] Booting worker with pid: 4172
+[2019-07-24 07:09:23 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4172)
+[2019-07-24 07:09:25 -0500] [4304] [INFO] Booting worker with pid: 4304
+[2019-07-24 07:09:55 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4304)
+[2019-07-24 07:09:59 -0500] [4398] [INFO] Booting worker with pid: 4398
+[2019-07-24 07:10:29 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4398)
+[2019-07-24 07:10:31 -0500] [4461] [INFO] Booting worker with pid: 4461
+[2019-07-24 07:11:01 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4461)
+[2019-07-24 07:11:02 -0500] [4518] [INFO] Booting worker with pid: 4518
+[2019-07-24 07:11:32 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4518)
+[2019-07-24 07:11:33 -0500] [4584] [INFO] Booting worker with pid: 4584
+[2019-07-24 07:12:03 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4584)
+[2019-07-24 07:12:08 -0500] [4653] [INFO] Booting worker with pid: 4653
+[2019-07-24 07:12:38 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4653)
+[2019-07-24 07:12:39 -0500] [4845] [INFO] Booting worker with pid: 4845
+[2019-07-24 07:13:09 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4845)
+[2019-07-24 07:13:10 -0500] [4845] [INFO] Worker exiting (pid: 4845)
+[2019-07-24 07:13:10 -0500] [4967] [INFO] Booting worker with pid: 4967
+[2019-07-24 07:13:40 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:4967)
+[2019-07-24 07:13:41 -0500] [4967] [INFO] Worker exiting (pid: 4967)
+[2019-07-24 07:13:45 -0500] [5081] [INFO] Booting worker with pid: 5081
+[2019-07-24 07:14:15 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:5081)
+[2019-07-24 07:16:14 -0500] [5489] [INFO] Booting worker with pid: 5489
+[2019-07-24 07:16:44 -0500] [2265] [CRITICAL] WORKER TIMEOUT (pid:5489)
+[2019-07-24 07:16:46 -0500] [5702] [INFO] Booting worker with pid: 5702
+[2019-07-24 07:57:13 -0500] [2140] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 07:57:13 -0500] [2140] [INFO] Listening at: http://127.0.0.1:4439 (2140)
+[2019-07-24 07:57:13 -0500] [2140] [INFO] Using worker: sync
+[2019-07-24 07:57:13 -0500] [2286] [INFO] Booting worker with pid: 2286
+[2019-07-24 07:57:43 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:2286)
+[2019-07-24 07:57:46 -0500] [2432] [INFO] Booting worker with pid: 2432
+[2019-07-24 07:58:16 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:2432)
+[2019-07-24 07:58:23 -0500] [2583] [INFO] Booting worker with pid: 2583
+[2019-07-24 07:58:53 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:2583)
+[2019-07-24 07:58:56 -0500] [3138] [INFO] Booting worker with pid: 3138
+[2019-07-24 07:59:26 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:3138)
+[2019-07-24 07:59:27 -0500] [3138] [INFO] Worker exiting (pid: 3138)
+[2019-07-24 07:59:33 -0500] [3345] [INFO] Booting worker with pid: 3345
+[2019-07-24 08:00:03 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:3345)
+[2019-07-24 08:00:04 -0500] [3418] [INFO] Booting worker with pid: 3418
+[2019-07-24 08:00:34 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:3418)
+[2019-07-24 08:00:48 -0500] [3495] [INFO] Booting worker with pid: 3495
+[2019-07-24 08:01:18 -0500] [2140] [CRITICAL] WORKER TIMEOUT (pid:3495)
+[2019-07-24 08:01:18 -0500] [3495] [INFO] Worker exiting (pid: 3495)
+[2019-07-24 08:01:18 -0500] [3573] [INFO] Booting worker with pid: 3573
+[2019-07-24 08:47:29 -0500] [2634] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 08:47:29 -0500] [2634] [INFO] Listening at: http://127.0.0.1:4439 (2634)
+[2019-07-24 08:47:29 -0500] [2634] [INFO] Using worker: sync
+[2019-07-24 08:47:29 -0500] [2989] [INFO] Booting worker with pid: 2989
+[2019-07-24 08:47:59 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:2989)
+[2019-07-24 08:48:00 -0500] [2989] [INFO] Worker exiting (pid: 2989)
+[2019-07-24 08:48:00 -0500] [3041] [INFO] Booting worker with pid: 3041
+[2019-07-24 08:48:30 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3041)
+[2019-07-24 08:48:31 -0500] [3041] [INFO] Worker exiting (pid: 3041)
+[2019-07-24 08:48:33 -0500] [3323] [INFO] Booting worker with pid: 3323
+[2019-07-24 08:49:04 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3323)
+[2019-07-24 08:49:05 -0500] [3497] [INFO] Booting worker with pid: 3497
+[2019-07-24 08:49:35 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3497)
+[2019-07-24 08:49:35 -0500] [3497] [INFO] Worker exiting (pid: 3497)
+[2019-07-24 08:49:36 -0500] [3613] [INFO] Booting worker with pid: 3613
+[2019-07-24 08:50:06 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3613)
+[2019-07-24 08:50:09 -0500] [3719] [INFO] Booting worker with pid: 3719
+[2019-07-24 08:50:39 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3719)
+[2019-07-24 08:50:46 -0500] [3815] [INFO] Booting worker with pid: 3815
+[2019-07-24 08:51:16 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3815)
+[2019-07-24 08:51:33 -0500] [3928] [INFO] Booting worker with pid: 3928
+[2019-07-24 08:52:03 -0500] [2634] [CRITICAL] WORKER TIMEOUT (pid:3928)
+[2019-07-24 08:52:04 -0500] [4103] [INFO] Booting worker with pid: 4103
+[2019-07-24 08:56:23 -0500] [2634] [INFO] Handling signal: term
+[2019-07-24 08:56:23 -0500] [4103] [INFO] Worker exiting (pid: 4103)
+[2019-07-24 08:56:24 -0500] [2634] [INFO] Shutting down: Master
+[2019-07-24 08:56:43 -0500] [5023] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 08:56:43 -0500] [5023] [INFO] Listening at: http://127.0.0.1:4439 (5023)
+[2019-07-24 08:56:43 -0500] [5023] [INFO] Using worker: sync
+[2019-07-24 08:56:43 -0500] [5059] [INFO] Booting worker with pid: 5059
+[2019-07-24 10:00:46 -0500] [5023] [CRITICAL] WORKER TIMEOUT (pid:5059)
+[2019-07-24 10:00:48 -0500] [10645] [INFO] Booting worker with pid: 10645
+[2019-07-24 10:15:43 -0500] [5023] [CRITICAL] WORKER TIMEOUT (pid:10645)
+[2019-07-24 10:15:46 -0500] [11822] [INFO] Booting worker with pid: 11822
+[2019-07-24 12:41:20 -0500] [2589] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 12:41:20 -0500] [2589] [INFO] Listening at: http://127.0.0.1:4439 (2589)
+[2019-07-24 12:41:20 -0500] [2589] [INFO] Using worker: sync
+[2019-07-24 12:41:20 -0500] [2898] [INFO] Booting worker with pid: 2898
+[2019-07-24 12:41:50 -0500] [2589] [CRITICAL] WORKER TIMEOUT (pid:2898)
+[2019-07-24 12:41:50 -0500] [2898] [INFO] Worker exiting (pid: 2898)
+[2019-07-24 12:41:52 -0500] [3075] [INFO] Booting worker with pid: 3075
+[2019-07-24 12:42:22 -0500] [2589] [CRITICAL] WORKER TIMEOUT (pid:3075)
+[2019-07-24 12:42:22 -0500] [3075] [INFO] Worker exiting (pid: 3075)
+[2019-07-24 12:42:22 -0500] [3663] [INFO] Booting worker with pid: 3663
+[2019-07-24 12:42:52 -0500] [2589] [CRITICAL] WORKER TIMEOUT (pid:3663)
+[2019-07-24 12:42:53 -0500] [3750] [INFO] Booting worker with pid: 3750
+[2019-07-25 14:48:54 -0500] [2589] [INFO] Handling signal: term
+[2019-07-25 14:48:54 -0500] [3750] [INFO] Worker exiting (pid: 3750)
+[2019-07-25 14:48:55 -0500] [2589] [INFO] Shutting down: Master
+[2019-07-25 14:48:57 -0500] [28869] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:48:57 -0500] [28869] [INFO] Listening at: http://127.0.0.1:4439 (28869)
+[2019-07-25 14:48:57 -0500] [28869] [INFO] Using worker: sync
+[2019-07-25 14:48:57 -0500] [28904] [INFO] Booting worker with pid: 28904
+[2019-07-25 14:50:48 -0500] [28869] [INFO] Handling signal: term
+[2019-07-25 14:50:48 -0500] [28904] [INFO] Worker exiting (pid: 28904)
+[2019-07-25 14:50:49 -0500] [28869] [INFO] Shutting down: Master
+[2019-07-25 14:50:51 -0500] [29242] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:50:51 -0500] [29242] [INFO] Listening at: http://127.0.0.1:4439 (29242)
+[2019-07-25 14:50:51 -0500] [29242] [INFO] Using worker: sync
+[2019-07-25 14:50:51 -0500] [29315] [INFO] Booting worker with pid: 29315
+[2019-07-25 14:52:02 -0500] [29242] [INFO] Handling signal: term
+[2019-07-25 14:52:02 -0500] [29315] [INFO] Worker exiting (pid: 29315)
+[2019-07-25 14:52:02 -0500] [29242] [INFO] Shutting down: Master
+[2019-07-25 14:52:05 -0500] [29570] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:52:05 -0500] [29570] [INFO] Listening at: http://127.0.0.1:4439 (29570)
+[2019-07-25 14:52:05 -0500] [29570] [INFO] Using worker: sync
+[2019-07-25 14:52:05 -0500] [29605] [INFO] Booting worker with pid: 29605
+[2019-07-25 15:06:34 -0500] [29570] [INFO] Handling signal: term
+[2019-07-25 15:06:34 -0500] [29605] [INFO] Worker exiting (pid: 29605)
+[2019-07-25 15:06:35 -0500] [29570] [INFO] Shutting down: Master
+[2019-07-25 15:06:37 -0500] [32371] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 15:06:37 -0500] [32371] [INFO] Listening at: http://127.0.0.1:4439 (32371)
+[2019-07-25 15:06:37 -0500] [32371] [INFO] Using worker: sync
+[2019-07-25 15:06:37 -0500] [32413] [INFO] Booting worker with pid: 32413
+[2019-07-25 16:30:43 -0500] [32371] [INFO] Handling signal: term
+[2019-07-25 16:30:43 -0500] [32413] [INFO] Worker exiting (pid: 32413)
+[2019-07-25 16:30:44 -0500] [32371] [INFO] Shutting down: Master
+[2019-07-25 16:30:48 -0500] [3866] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:30:48 -0500] [3866] [INFO] Listening at: http://127.0.0.1:4439 (3866)
+[2019-07-25 16:30:48 -0500] [3866] [INFO] Using worker: sync
+[2019-07-25 16:30:48 -0500] [3947] [INFO] Booting worker with pid: 3947
+[2019-07-25 16:33:14 -0500] [3866] [INFO] Handling signal: term
+[2019-07-25 16:33:14 -0500] [3947] [INFO] Worker exiting (pid: 3947)
+[2019-07-25 16:33:14 -0500] [3866] [INFO] Shutting down: Master
+[2019-07-25 16:33:17 -0500] [4139] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:33:17 -0500] [4139] [INFO] Listening at: http://127.0.0.1:4439 (4139)
+[2019-07-25 16:33:17 -0500] [4139] [INFO] Using worker: sync
+[2019-07-25 16:33:17 -0500] [4178] [INFO] Booting worker with pid: 4178
+[2019-07-25 16:36:26 -0500] [4139] [INFO] Handling signal: term
+[2019-07-25 16:36:26 -0500] [4178] [INFO] Worker exiting (pid: 4178)
+[2019-07-25 16:36:26 -0500] [4139] [INFO] Shutting down: Master
+[2019-07-25 16:36:29 -0500] [4459] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:36:29 -0500] [4459] [INFO] Listening at: http://127.0.0.1:4439 (4459)
+[2019-07-25 16:36:29 -0500] [4459] [INFO] Using worker: sync
+[2019-07-25 16:36:29 -0500] [4495] [INFO] Booting worker with pid: 4495
+[2019-07-25 16:37:40 -0500] [4459] [INFO] Handling signal: term
+[2019-07-25 16:37:40 -0500] [4495] [INFO] Worker exiting (pid: 4495)
+[2019-07-25 16:37:41 -0500] [4459] [INFO] Shutting down: Master
+[2019-07-25 16:37:43 -0500] [4634] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:37:43 -0500] [4634] [INFO] Listening at: http://127.0.0.1:4439 (4634)
+[2019-07-25 16:37:43 -0500] [4634] [INFO] Using worker: sync
+[2019-07-25 16:37:43 -0500] [4689] [INFO] Booting worker with pid: 4689
+[2019-07-25 16:42:11 -0500] [4634] [INFO] Handling signal: term
+[2019-07-25 16:42:11 -0500] [4689] [INFO] Worker exiting (pid: 4689)
+[2019-07-25 16:42:12 -0500] [4634] [INFO] Shutting down: Master
+[2019-07-25 16:42:16 -0500] [4964] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:42:16 -0500] [4964] [INFO] Listening at: http://127.0.0.1:4439 (4964)
+[2019-07-25 16:42:16 -0500] [4964] [INFO] Using worker: sync
+[2019-07-25 16:42:16 -0500] [5044] [INFO] Booting worker with pid: 5044
+[2019-07-25 16:43:42 -0500] [4964] [INFO] Handling signal: term
+[2019-07-25 16:43:42 -0500] [5044] [INFO] Worker exiting (pid: 5044)
+[2019-07-25 16:43:43 -0500] [4964] [INFO] Shutting down: Master
+[2019-07-25 16:43:45 -0500] [5156] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:43:45 -0500] [5156] [INFO] Listening at: http://127.0.0.1:4439 (5156)
+[2019-07-25 16:43:45 -0500] [5156] [INFO] Using worker: sync
+[2019-07-25 16:43:45 -0500] [5207] [INFO] Booting worker with pid: 5207
+[2019-07-25 16:46:05 -0500] [5156] [INFO] Handling signal: term
+[2019-07-25 16:46:05 -0500] [5207] [INFO] Worker exiting (pid: 5207)
+[2019-07-25 16:46:06 -0500] [5156] [INFO] Shutting down: Master
+[2019-07-25 16:46:08 -0500] [5343] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:46:08 -0500] [5343] [INFO] Listening at: http://127.0.0.1:4439 (5343)
+[2019-07-25 16:46:08 -0500] [5343] [INFO] Using worker: sync
+[2019-07-25 16:46:08 -0500] [5379] [INFO] Booting worker with pid: 5379
+[2019-07-26 11:56:27 -0500] [2311] [INFO] Starting gunicorn 19.9.0
+[2019-07-26 11:56:27 -0500] [2311] [INFO] Listening at: http://127.0.0.1:4439 (2311)
+[2019-07-26 11:56:27 -0500] [2311] [INFO] Using worker: sync
+[2019-07-26 11:56:27 -0500] [3036] [INFO] Booting worker with pid: 3036
+[2019-07-26 11:56:57 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3036)
+[2019-07-26 11:56:58 -0500] [3060] [INFO] Booting worker with pid: 3060
+[2019-07-26 11:57:29 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3060)
+[2019-07-26 11:57:29 -0500] [3060] [INFO] Worker exiting (pid: 3060)
+[2019-07-26 11:57:29 -0500] [3116] [INFO] Booting worker with pid: 3116
+[2019-07-26 11:57:59 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3116)
+[2019-07-26 11:58:09 -0500] [3187] [INFO] Booting worker with pid: 3187
+[2019-07-26 11:58:40 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3187)
+[2019-07-26 11:58:40 -0500] [3187] [INFO] Worker exiting (pid: 3187)
+[2019-07-26 11:58:40 -0500] [3244] [INFO] Booting worker with pid: 3244
+[2019-07-26 11:59:10 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3244)
+[2019-07-26 11:59:10 -0500] [3244] [INFO] Worker exiting (pid: 3244)
+[2019-07-26 11:59:10 -0500] [3768] [INFO] Booting worker with pid: 3768
+[2019-07-26 11:59:40 -0500] [2311] [CRITICAL] WORKER TIMEOUT (pid:3768)
+[2019-07-26 11:59:40 -0500] [3768] [INFO] Worker exiting (pid: 3768)
+[2019-07-26 11:59:40 -0500] [3871] [INFO] Booting worker with pid: 3871
