@@ -98,11 +98,11 @@ import pyodbc
 
 #import secrets
 
-#from app.controller.crypto import AES_Encryption
+#from app.controller.crypto import AES_Encryption ODBC Driver 17 for 
 
 
 
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=190.85.232.78;DATABASE=DBKiero_Productos;UID=sa;PWD=S3rv3r1-27!')
+conn = pyodbc.connect('DRIVER={SQL Server};SERVER=190.85.232.78;DATABASE=DBKiero_Productos;UID=sa;PWD=S3rv3r1-27!')
 
 
 
@@ -131,6 +131,10 @@ import os
 import hashlib
 
 import random
+import datetime
+date_time = []
+today = datetime.date.today()
+date_time.append(today)
 
 
 
@@ -150,8 +154,6 @@ class registro(resource):
 
         data = request.get_json()
 
-        with open('text.txt','a') as file:
-            file.write(str(data)+'\n')
 
         # registrar = sRegistro(usuario_id=usuario_id) # se llaman a los servicios
 
@@ -161,7 +163,7 @@ class registro(resource):
 
         string_random = hashlib.md5(random_data).hexdigest()[:32]
 
-        with conn:
+        with conn: 
 
             query = """select top(1) email from users where email = '{comprobar_email}'""".format(comprobar_email=data['email'])
 
@@ -195,7 +197,6 @@ class registro(resource):
 
                 token_confirmation_email = string_random
 
-                print(token_confirmation_email)
 
                 new_user = [email,password]
 
@@ -217,14 +218,21 @@ class registro(resource):
 
                     crsr.fast_executemany = True
                 
+                try:
+                    msg = Message('Pregunta registrada', sender = 'contacto@kiero.co', recipients = ['diana.gutierrez@kiero.co', 'josefmarin1910@gmail.com','danielabakiero@gmail.com'])
+                    msg.body = """
+                    Nuevo usuario registrado:
 
-                import datetime
+                    Nombre: {name} {lastname}
+                    email: {email}
+                    fecha: {datetime_re}    
 
-                date_time = []
+                    """.format(name=name,lastname=lastname,email=email,datetime_re=today)
+                    mail.send(msg)
+                except Exception as unErr:
+                    print(unErr)
 
-                today = datetime.date.today()
-
-                date_time.append(today)
+               
 
 
 
@@ -285,8 +293,6 @@ Este es el correo de confirmación, copie el siguiente link y peguelo en el busc
                 __return.headers['Access-Control-Allow-Methods'] = 'POST'
 
                 __return.headers['Allow'] = 'POST'
-
-                print(__return)
 
                 return __return
 
