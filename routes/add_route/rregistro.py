@@ -98,11 +98,11 @@ import pyodbc
 
 #import secrets
 
-#from app.controller.crypto import AES_Encryption ODBC Driver 17 for 
+#from app.controller.crypto import AES_Encryption  
 
 
 
-conn = pyodbc.connect('DRIVER={SQL Server};SERVER=190.85.232.78;DATABASE=DBKiero_Productos;UID=sa;PWD=S3rv3r1-27!')
+conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=190.85.232.78;DATABASE=DBKiero_Productos;UID=sa;PWD=S3rv3r1-27!')
 
 
 
